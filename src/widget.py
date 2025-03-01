@@ -6,7 +6,7 @@ def mask_account_card(card_type_number: str) -> str:
     for symbol in card_type_number:
         if symbol.isalpha():
             alfa_text += symbol
-        else :
+        else:
             digit_text += symbol
 
     if "Счёт" in alfa_text:
@@ -22,7 +22,7 @@ def get_date(date: str) -> str:
     """Функция для вывода даты в формате дд.мм.гггг"""
     new_date_list = date[:10].split("-")
     reversed_date_list = new_date_list[::-1]
-    return".".join(reversed_date_list)
+    return ".".join(reversed_date_list)
 
 
 print(get_date("2024-03-11T02:26:18.671407"))
