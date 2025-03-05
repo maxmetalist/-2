@@ -1,9 +1,9 @@
 def filter_by_state(id_list: list, state: str = "EXECUTED") -> list:
     """Функция сортировки по ключу состояния id клиента"""
     executed_list = []
-    for id in id_list:
-        if id["state"] == "EXECUTED":
-            executed_list.append(id)
+    for id_number in id_list:
+        if id_number["state"] == "EXECUTED":
+            executed_list.append(id_number)
 
     return executed_list
 
